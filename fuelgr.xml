@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE fuelgr [
+        <!ELEMENT fuelgr (orderCustomer|Pratirio)*>
+        <!ELEMENT orderCustomer (geo|xronikosimeioklisis|msg)*>
+        <!ELEMENT geo (lat|long)*>
+        <!ELEMENT lat (#PCDATA)>
+        <!ELEMENT long (#PCDATA)>
+        <!ELEMENT xronikosimeioklisis (#PCDATA)>
+        <!ATTLIST xronikosimeioklisis
+                qTimeStsmp CDATA #REQUIRED>
+        <!ELEMENT msg (#PCDATA)>
+        <!ELEMENT Pratirio (StoixeiaPratiriou)*>
+        <!ATTLIST Pratirio
+                id CDATA #REQUIRED>
+        <!ELEMENT StoixeiaPratiriou (county|companyName|coordinators|distance|h24|brand|phone|StoixeiaPoloumenouKausimou)*>
+        <!ELEMENT county (municipality)*>
+        <!ATTLIST county
+                countyID CDATA #REQUIRED
+                name CDATA #REQUIRED>
+        <!ELEMENT municipality (dd)*>
+        <!ATTLIST municipality
+                municipalityID CDATA #REQUIRED
+                name CDATA #REQUIRED>
+        <!ELEMENT dd (address)*>
+        <!ATTLIST dd
+                idID CDATA #REQUIRED
+                name CDATA #REQUIRED>
+        <!ELEMENT address (#PCDATA)>
+        <!ELEMENT companyName (#PCDATA)>
+        <!ELEMENT coordinators (#PCDATA)>
+        <!ATTLIST coordinators
+                lat CDATA #REQUIRED
+                long CDATA #REQUIRED>
+        <!ELEMENT distance (#PCDATA)>
+        <!ELEMENT h24 (#PCDATA)>
+        <!ATTLIST h24
+                id (on | off) #REQUIRED>
+        <!ELEMENT brand (#PCDATA)>
+        <!ATTLIST brand
+                brandID CDATA #REQUIRED>
+        <!ELEMENT phone (#PCDATA)>
+        <!ELEMENT StoixeiaPoloumenouKausimou (fuelName|price|priceTimeStamp)*>
+        <!ATTLIST StoixeiaPoloumenouKausimou
+                id CDATA #REQUIRED>
+        <!ELEMENT fuelName (#PCDATA)>
+        <!ATTLIST fuelName
+                fyuelTypeID CDATA #REQUIRED>
+        <!ELEMENT price (#PCDATA)>
+        <!ELEMENT priceTimeStamp (#PCDATA)>
+        <!ATTLIST priceTimeStamp
+                stamp CDATA #REQUIRED>
+        ]>
+<fuelgr>
+
+    <orderCustomer>
+        <geo>
+            <lat>12,345</lat>
+            <long>11,789</long>
+        </geo>
+        <xronikosimeioklisis qTimeStsmp="12:01:03"></xronikosimeioklisis>
+        <msg>Καλησπέρα</msg>
+    </orderCustomer>
+
+    <Pratirio id="001">
+        <StoixeiaPratiriou>
+            <county countyID="12" name = "Λάρισας">
+                <municipality municipalityID="34" name ="Λάρισας">
+                    <dd idID="15" name = "Γιάννουλης">
+                        <address> Παπάγου 29</address>
+                    </dd>
+                </municipality>
+            </county>
+            <companyName>EKO</companyName>
+            <coordinators lat="14,234" long="14,346"/>
+            <distance>15klm</distance>
+            <h24 id="on"></h24>
+            <brand brandID="99">BP Ultimate</brand>
+            <phone>2410996778</phone>
+
+
+            <StoixeiaPoloumenouKausimou id="A01">
+                <fuelName fyuelTypeID="D23A">Αμόλυβδη</fuelName>
+                <price>1,581</price>
+                <priceTimeStamp stamp="Fri, 03 Apr 2020 16:13:00 GMT"></priceTimeStamp>
+            </StoixeiaPoloumenouKausimou>
+
+            <StoixeiaPoloumenouKausimou id="B01">
+                <fuelName fyuelTypeID="D23A">Diesel</fuelName>
+                <price>1,45</price>
+                <priceTimeStamp stamp="Fri, 03 Apr 2020 16:13:00 GMT"></priceTimeStamp>
+            </StoixeiaPoloumenouKausimou>
+
+        </StoixeiaPratiriou>
+    </Pratirio>
+
+
+    <Pratirio id="02">
+        <StoixeiaPratiriou>
+            <county countyID="12" name = "Δυτικής Αττικής">
+                <municipality municipalityID="34" name = "Φυλής">
+                    <dd idID="15" name = "Φυλής">
+                        <address> Νάξου 30</address>
+                    </dd>
+                </municipality>
+            </county>
+            <companyName>Shell</companyName>
+            <coordinators lat="12,234" long="19,386"/>
+            <distance>13klm</distance>
+            <h24 id="on"></h24>
+            <brand brandID="99">Shell</brand>
+            <phone>2109963778</phone>
+
+
+            <StoixeiaPoloumenouKausimou id="V03">
+                <fuelName fyuelTypeID="D23A">Σούπερ Αμόλυβδη</fuelName>
+                <price>1,61</price>
+                <priceTimeStamp stamp = "Fri, 03 Apr 2020 16:13:00 GMT"></priceTimeStamp>
+            </StoixeiaPoloumenouKausimou>
+
+            <StoixeiaPoloumenouKausimou id="K11">
+                <fuelName fyuelTypeID="D23B">Shell V-Power</fuelName>
+                <price>1,638</price>
+                <priceTimeStamp stamp = "Fri, 03 Apr 2020 16:13:00 GMT"></priceTimeStamp>
+            </StoixeiaPoloumenouKausimou>
+        </StoixeiaPratiriou>
+    </Pratirio>
+
+
+</fuelgr>
+
