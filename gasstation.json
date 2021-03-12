@@ -1,0 +1,128 @@
+{
+  "fuelgr": {
+    "orderCustomer": {
+      "geo": {
+        "lat": "12,345",
+        "long": "11,789"
+      },
+      "xronikosimeioklisis": {
+        "_qTimeStsmp": "12:01:03"
+      },
+      "msg": "Καλησπέρα"
+    },
+    "Pratirio": [
+      {
+        "StoixeiaPratiriou": {
+          "county": {
+            "municipality": {
+              "dd": {
+                "address": "Παπάγου 29",
+                "_idID": "15",
+                "_name": "Γιάννουλης"
+              },
+              "_municipalityID": "34",
+              "_name": "Λάρισας"
+            },
+            "_countyID": "12",
+            "_name": "Λάρισας"
+          },
+          "companyName": "EKO",
+          "coordinators": {
+            "_lat": "14,234",
+            "_long": "14,346"
+          },
+          "distance": "15klm",
+          "h24": {
+            "_id": "on"
+          },
+          "brand": {
+            "_brandID": "99",
+            "__text": "BP Ultimate"
+          },
+          "phone": "2410996778",
+          "StoixeiaPoloumenouKausimou": [
+            {
+              "fuelName": {
+                "_fyuelTypeID": "D23A",
+                "__text": "Αμόλυβδη"
+              },
+              "price": "1,581",
+              "priceTimeStamp": {
+                "_stamp": "Fri, 03 Apr 2020 16:13:00 GMT"
+              },
+              "_id": "A01"
+            },
+            {
+              "fuelName": {
+                "_fyuelTypeID": "D23A",
+                "__text": "Diesel"
+              },
+              "price": "1,45",
+              "priceTimeStamp": {
+                "_stamp": "Fri, 03 Apr 2020 16:13:00 GMT"
+              },
+              "_id": "B01"
+            }
+          ]
+        },
+        "_id": "001"
+      },
+      {
+        "StoixeiaPratiriou": {
+          "county": {
+            "municipality": {
+              "dd": {
+                "address": "Νάξου 30",
+                "_idID": "15",
+                "_name": "Φυλής"
+              },
+              "_municipalityID": "34",
+              "_name": "Φυλής"
+            },
+            "_countyID": "12",
+            "_name": "Δυτικής Αττικής"
+          },
+          "companyName": "Shell",
+          "coordinators": {
+            "_lat": "12,234",
+            "_long": "19,386"
+          },
+          "distance": "13klm",
+          "h24": {
+            "_id": "on"
+          },
+          "brand": {
+            "_brandID": "99",
+            "__text": "Shell"
+          },
+          "phone": "2109963778",
+          "StoixeiaPoloumenouKausimou": [
+            {
+              "fuelName": {
+                "_fyuelTypeID": "D23A",
+                "__text": "Σούπερ Αμόλυβδη"
+              },
+              "price": "1,61",
+              "priceTimeStamp": {
+                "_stamp": "Fri, 03 Apr 2020 16:13:00 GMT"
+              },
+              "_id": "V03"
+            },
+            {
+              "fuelName": {
+                "_fyuelTypeID": "D23B",
+                "__text": "Shell V-Power"
+              },
+              "price": "1,638",
+              "priceTimeStamp": {
+                "_stamp": "Fri, 03 Apr 2020 16:13:00 GMT"
+              },
+              "_id": "K11"
+            }
+          ]
+        },
+        "_id": "02"
+      }
+    ]
+  }
+}
